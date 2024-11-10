@@ -15,7 +15,7 @@ const Glassmore = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
-      className="flex items-center justify-center sm:h-[40vh] md:h-[378px] object-contain relative p-4"
+      className="flex items-center justify-center sm:h-[40vh] md:h-[378px] object-contain relative p-4 md:mt-40 mt-20"
     >
       <div className="backdrop-blur-sm bg-[#ffffff]/50 px-6 py-8 rounded-lg w-full sm:max-w-[90%] md:max-w-[60%] lg:max-w-[50%] flex items-center justify-between gap-4">
         <div>

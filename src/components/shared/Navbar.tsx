@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Desktop Buttons (Right) */}
         <div className="hidden md:flex gap-4">
           <button className="rounded-full xl px-5 py-2 border tracking-wide text-primary">
-            <li onClick={() => setModalOpen(true)}> Apply as Tutor</li>
+            <li onClick={() => setModalOpen(true)} className='list-none'> Apply as Tutor</li>
           </button>
           <button className="rounded-full xl border text-white px-6 py-2 bg-gradient-to-r from-[#03c634] to-[#009300]">
             <Link href="/signup">Log in</Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
         <Link href="/signup" className="block py-2 text-lg">Sign Up</Link>
         <div className="mt-4">
           <button className="w-full rounded-full xl px-5 py-2 border tracking-wide text-primary mb-2">
-            <Link href="/tuiton">Apply as Tutor</Link>
+          <li onClick={() => setModalOpen(true)} className='list-none'> Apply as Tutor</li>
           </button>
           <button className="w-full rounded-full xl px-6 py-2 border text-white bg-gradient-to-r from-[#03c634] to-[#009300]">
             <Link href="/signup">Log in</Link>
