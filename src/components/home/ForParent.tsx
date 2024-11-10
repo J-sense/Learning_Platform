@@ -7,12 +7,13 @@ import group from "../../assets/Group 1883.png"
 
 const ForParent = () => {
   return (
-    <div className="py-10  md:px-8 mt-32">
+    <div className="py-10  md:px-8 md:mt-32">
       <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
         
         {/* Left Column: Text Content */}
         <div>
           <div className='md:text-3xl text-2xl text-black font-bold'>
+          <div className='w-16 bg-green-900 border-t-8 border-[#028D02]'></div>
             For <span className="text-[#ff8c00]">Parents</span>
           </div>
           <p className="text-primary text-base md:text-lg my-4">

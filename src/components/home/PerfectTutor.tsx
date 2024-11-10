@@ -3,7 +3,7 @@ import Heading from '../shared/Heading';
 
 const PerfectTutor = () => {
   return (
-    <div className='max-w-[85%] mx-auto mt-[60px] md:mt-[120px] sm:p-5'>
+    <div className='max-w-[85%] mx-auto mt-[60px] md:mt-[120px] sm:p-5 pb-[150px] md:pb-0'>
       <div className='w-16 bg-green-900 border-t-8 border-[#028D02]'></div>
       <Heading>
         Whatever the Learning Need, We Have the <span className='text-[#ff8c00]'>Perfect Tutor for Your Child!</span>

@@ -5,10 +5,12 @@ import logo from "@/assets/logo.jpeg";
 import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { LuChevronDown } from "react-icons/lu";
-  // Import React Icons
+import Modal from '../home/Model';
+// Import React Icons
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   // Toggle the navbar menu visibility on mobile devices
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -39,7 +41,7 @@ const Navbar = () => {
         {/* Desktop Buttons (Right) */}
         <div className="hidden md:flex gap-4">
           <button className="rounded-full xl px-5 py-2 border tracking-wide text-primary">
-            <Link href="/tuiton">Apply as Tutor</Link>
+            <li onClick={() => setModalOpen(true)}> Apply as Tutor</li>
           </button>
           <button className="rounded-full xl border text-white px-6 py-2 bg-gradient-to-r from-[#03c634] to-[#009300]">
             <Link href="/signup">Log in</Link>
@@ -79,6 +81,17 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} >
+        <div className=' w-full'>
+
+        <h2 className="text-xl font-bold">to apply as a tutor!</h2>
+        <p>You’ll need to provide some essential information about your qualifications, experience, and teaching style.</p>
+        <button onClick={() => setModalOpen(false)} className="close-button-class">
+          Close
+        </button>
+        </div>
+       
+      </Modal>
     </nav>
   );
 };

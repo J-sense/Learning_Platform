@@ -23,7 +23,7 @@ const Learnig = () => {
         {/* Image Section */}
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <Image src={img1} alt="imgONE" height={269} width={162} className="object-contain" />
-          <div className="flex md:block space-y-6 sm:space-x-3 gap-3 sm:space-x-0 items-center justify-center">
+          <div className="flex md:block space-y-6 sm:space-x-3 gap-3  items-center justify-center">
             <Image src={img2} alt="imgTWO" height={269} width={162} className="object-contain" />
             <Image src={img3} alt="imgTHREE" height={269} width={168} className="object-contain" />
           </div>
@@ -32,8 +32,9 @@ const Learnig = () => {
 
         {/* Text Content Section */}
         <div className="md:text-left">
+        <div className='w-16 bg-green-900 border-t-8 border-[#028D02]'></div>
           <h2 className="md:text-3xl text-2xl text-black font-bold">
-            For <span className="text-[#ff8c00]">School</span>
+            Learning <span className="text-[#ff8c00]">Resources</span>
           </h2>
           <p className="text-primary text-base md:text-lg my-4">
             Manage professional development and online tutoring with ease. Our programs improve student outcomes, empower educators, and lead to a more effective and inclusive learning environment.
