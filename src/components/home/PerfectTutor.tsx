@@ -9,7 +9,7 @@ const PerfectTutor = () => {
         Whatever the Learning Need, We Have the <span className='text-[#ff8c00]'>Perfect Tutor for Your Child!</span>
       </Heading>
       <div className='h-[385px] flex flex-col sm:flex-row justify-around mt-28 gap-28 md:gap-2'>
-        {/* Left Section */}
+
         <div className='relative w-full sm:w-[35%] '>
           <div className='absolute top-0 right-0 pb-6'>
           <h3 className='text-[20px] font-semibold text-black'>Identify Gaps & Learning Needs</h3>
@@ -21,7 +21,7 @@ const PerfectTutor = () => {
           </div>
         </div>
 
-        {/* Middle Section (Centered Circle) */}
+ 
         <div className="flex justify-center items-center h-[400px] sm:h-[385px] md:h-[385px]">
           <div className="w-[70%] sm:w-[30%] flex justify-center items-center">
             <div className="border-2 border-black border-dotted rounded-full p-12">
@@ -36,7 +36,7 @@ const PerfectTutor = () => {
           </div>
         </div>
 
-        {/* Right Section */}
+    
         <div className='relative w-full sm:w-[35%]'>
           <div className='absolute top-0 right-0'>
             <h3 className='text-[20px] font-semibold text-black'>Identify Gaps & Learning Needs</h3>

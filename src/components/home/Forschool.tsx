@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../shared/Heading';
+// import Heading from '../shared/Heading';
 import parent from '../../assets/school.png';
 import Image from 'next/image';
 import { LuArrowRight } from "react-icons/lu";
@@ -10,17 +10,17 @@ const Forschool = () => {
     <div className="py-10  md:px-8 mt-22">
       <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
         
-        {/* Left Column: Text Content */}
+      
        
 
-        {/* Right Column: Image */}
+       
         <div className="flex justify-center relative">
           <Image
-            src={parent} // Imported image path
+            src={parent} 
             height={426}
             width={603}
             alt="parent"
-            className="object-cover rounded-xl shadow-lg" // Make the image responsive and stylish
+            className="object-cover rounded-xl shadow-lg"
           />
           <Image 
           className='absolute bottom-0 right-0'

@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../shared/Heading';
+
 import parent from '../../assets/parent.png';
 import Image from 'next/image';
 import { LuArrowRight } from "react-icons/lu";
@@ -10,7 +10,7 @@ const ForParent = () => {
     <div className="py-10  md:px-8 md:mt-32">
       <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
         
-        {/* Left Column: Text Content */}
+      
         <div>
           <div className='md:text-3xl text-2xl text-black font-bold'>
           <div className='w-16 bg-green-900 border-t-8 border-[#028D02]'></div>
@@ -25,14 +25,14 @@ const ForParent = () => {
           </button>
         </div>
 
-        {/* Right Column: Image */}
+       
         <div className="flex justify-center relative">
           <Image
-            src={parent} // Imported image path
+            src={parent} 
             height={426}
             width={603}
             alt="parent"
-            className="object-cover rounded-xl shadow-lg" // Make the image responsive and stylish
+            className="object-cover rounded-xl shadow-lg" 
           />
           <Image 
           className='absolute bottom-0 left-0'
