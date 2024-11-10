@@ -17,7 +17,7 @@ const ForParent = () => {
             For <span className="text-[#ff8c00]">Parents</span>
           </div>
           <p className="text-primary text-base md:text-lg my-4">
-          As a parent, stay involved in your child's learning journey. Track their progress, view assignments, and receive updates on their achievements. Our platform ensures you're always connected to their educational growth.
+          As a parent, stay involved in your child&s learning journey. Track their progress, view assignments, and receive updates on their achievements. Our platform ensures you're always connected to their educational growth.
           </p>
           <button className="w-auto rounded-full px-7 py-2 border text-white bg-gradient-to-r from-[#03c634] to-[#009300] mt-4 md:mt-6 flex items-center">
          Learn More <LuArrowRight />
