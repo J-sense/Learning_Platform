@@ -1,14 +1,15 @@
-'use client'
-import React from 'react'
-import Heading from '../shared/Heading'
-import img1 from "@/assets/picone.jpeg"
-import img2 from "@/assets/pictwo.jpeg"
-import img3 from "@/assets/picthree.jpeg"
-import Image from 'next/image'
-import { LuArrowRight } from "react-icons/lu"
+'use client';
+import React from 'react';
+import Heading from '../shared/Heading';
+import img1 from "@/assets/picone.jpeg";
+import img2 from "@/assets/pictwo.jpeg";
+import img3 from "@/assets/picthree.jpeg";
+import Image from 'next/image';
+import { LuArrowRight } from "react-icons/lu";
 
+// Declare types for the images
 interface LearningItem {
-  image: any;
+  image: any; // image paths are now considered strings
   title: string;
   keyStage: string;
 }
@@ -34,14 +35,16 @@ const TuitionProgram = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {items.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white p-4 sm:p-6 rounded-lg space-y-2 hover:bg-green-600 hover:text-white transition ease-in-out duration-300"
             >
-              <Image 
-                src={item.image} 
-                alt={item.title} 
-                className="w-full h-40 md:h-48 object-cover rounded-md" 
+              <Image
+                src={item.image} // Use the imported image correctly
+                alt={item.title}
+                className="w-full h-40 md:h-48 object-cover rounded-md"
+                width={500} 
+                height={300}
               />
               <h3 className="text-lg md:text-xl font-bold mt-4 hover:text-white">
                 {item.title}
